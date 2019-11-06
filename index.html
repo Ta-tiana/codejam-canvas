@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>CodeJam canvas</title>
+  </head>
+  <body>
+
+    <!--Wrapper-->
+    <div class="wrapper">
+
+      <!--Header-->
+      <header class="header">
+        <button class="header__button-navigation"><i class="fas fa-bars"></i></button>
+        <h1 class="header__h1">CodeJam Canvas</h1>
+        <button class="header__button-menu"><i class="fas fa-ellipsis-v"></i></button>
+      </header>
+
+
+      <!--Main-->
+      <main class="main">
+
+        <!--adjustments area-->
+        <div class="adjustments-area">
+
+          <!--Instruments-->
+          <ul class="instruments">
+            <li class="instruments__item">
+              <button class="instruments__button">
+                <i class="instruments__icon fas fa-fill-drip"></i>
+                <span class="instruments__name">Paint bucket</span>
+              </button>
+            </li>
+            <li class="instruments__item">
+              <button class="instruments__button">
+                <i class="instruments__icon fas fa-eye-dropper"></i>
+                <span class="instruments__name">Choose color</span>
+              </button>
+            </li>
+            <li class="instruments__item">
+              <button class="instruments__button">
+                <i class="instruments__icon fas fa-arrows-alt"></i>
+                <span class="instruments__name">Move</span>
+              </button>
+            </li>
+            <li class="instruments__item">
+              <button class="instruments__button">
+                <i class="instruments__icon fas fa-exchange-alt"></i>
+                <span class="instruments__name">Transform</span>
+              </button>
+            </li>
+          </ul>
+
+          <!--Colors-->
+          <ul class="colors">
+            <li class="colors__item">
+              <button class="colors__button">
+                <i class="fas fa-dot-circle"></i>
+                <span class="colors__name">Current color</span>
+              </button>
+            </li>
+            <li class="colors__item">
+              <button class="colors__button">
+                <i class="colors__icon fas fa-dot-circle"></i>
+                <span class="colors__name">Previous color</span>
+              </button>
+            </li>
+            <li class="colors__item">
+              <button class="colors__button">
+                <i class="colors__icon fas fa-dot-circle"></i>
+                <span class="colors__name">Lightcoral</span>
+              </button>
+            </li>
+            <li class="colors__item">
+              <button class="colors__button">
+                <i class="colors__icon fas fa-dot-circle"></i>
+                <span class="colors__name">Lightblue</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!--Working area-->
+        <div class="working-area">
+          <canvas id="canvas" class="canvas" width="512" height="512">CodeJam canvas</canvas>
+
+
+          <!--Resolutions area-->
+          <div class="resolutions-area">
+
+            <!--Resolutions-->
+            <ul class="resolutions">
+              <li class="resolutions__item">
+                <button class="resolutions__button">
+                  <i class="resolutions__icon fas fa-expand"></i>
+                  <span class="resolutions__name">4 x 4</span>
+                </button>
+              </li>
+              <li class="resolutions__item">
+                <button class="resolutions__button">
+                  <i class="resolutions__icon fas fa-expand"></i>
+                  <span class="resolutions__name">32 x 32</span>
+                </button>
+              </li>
+              <li class="resolutions__item">
+                <button class="resolutions__button">
+                  <i class="resolutions__icon fas fa-expand"></i>
+                  <span class="resolutions__name">256 x 256</span>
+                </button>
+              </li>
+              <li class="resolutions__item">
+                <button class="resolutions__button" id="32">
+                  <i class="resolutions__icon fas  fa-search-minus"></i>
+                  <span class="resolutions__name">Zoom 32</span>
+                </button>
+              <li class="resolutions__item">
+                <button class="resolutions__button" id="512">
+                  <i class="resolutions__icon fas fa-search-plus"></i>
+                  <span class="resolutions__name">Zoom 512</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <!--Main script-->
+    <script src="./assets/scripts/script.js"></script>
+
+  </body>
+</html>
